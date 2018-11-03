@@ -18,8 +18,8 @@ import (
 func main() {
 	var (
 		debug  = flag.String("debug", "1", "debug 0 is tls mode")
-		addr   = flag.String("listen", ":8084", "port to listen")
-		wsAddr = flag.String("ws_addr", "127.0.0.1:8083", "ws tcp addr to proxy pass")
+		addr   = flag.String("l", ":8084", "port to listen")
+		wsAddr = flag.String("r", "127.0.0.1:8083", "bridge to Coolpy7 WebSocket poxy")
 	)
 
 	flag.Parse()

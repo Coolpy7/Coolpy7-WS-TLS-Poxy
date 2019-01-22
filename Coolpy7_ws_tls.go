@@ -50,12 +50,12 @@ func main() {
 
 	go func() {
 		if *debug == "1" {
-			fmt.Println("is debug mode")
+			fmt.Println("is debug mode tls is not working")
 			if err := srv.ListenAndServe(); err != nil {
 				log.Fatal(err)
 			}
 		} else {
-			fmt.Println("is product mode")
+			fmt.Println("is product mode tls is working")
 			if err := srv.ListenAndServeTLS("", ""); err != nil {
 				log.Fatal(err)
 			}
